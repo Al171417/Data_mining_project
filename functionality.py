@@ -40,10 +40,11 @@ def colored_text(text, color):
 
 
 def welcome():
-    set_background('C:\\Users\\nonso\\Desktop\\Coding_projects\\PROJETS\\DaFiT_projection\\Data_mining_pr_logo.png')
+    set_background('Data_mining_pr_logo.png')
     set_title_color("white")
     st.title("Data Loading Support")
-    colored_text("By Alan Nonso", "white")
+    authors = "By:\n Alan Nonso(171417)\n Antoine()\n Irenée()\n Sabarie()"
+    colored_text(authors, "white")
     welcome_text = "Welcome to Data_File Traitor (DaFiT) !"
     line1 = "We are delighted to have you here.\n "
     line2 = "This application is designed to help you loading and analyzing data in a very deep eye."
@@ -55,7 +56,7 @@ def welcome():
 
 
 def data_obs_intro():
-    set_background('C:\\Users\\nonso\\Desktop\\Coding_projects\\PROJETS\\DaFiT_projection\\Data_mining_pr_logo.png')
+    set_background('Data_mining_pr_logo.png')
     set_title_color("white")
     st.title('Data observation farm')
     st.write("""Welcome to the Data Observation section! 
@@ -74,7 +75,7 @@ def data_obs_intro():
 
 
 def formatting_data_intro():
-    set_background('C:\\Users\\nonso\\Desktop\\Coding_projects\\PROJETS\\DaFiT_projection\\Data_mining_pr_logo_bleu.png')
+    set_background('Data_mining_pr_logo_bleu.png')
     set_title_color("white")
     st.title('Data formatting farm')
     st.write("""Welcome to the formatting farm, this is where you recook the data's format""")
@@ -109,7 +110,7 @@ def uploading():
 
 
 def ml_regressions_intro():
-    set_background('C:\\Users\\nonso\\Desktop\\Coding_projects\\PROJETS\\DaFiT_projection\\Data_mining_pr_logo_indigo.png')
+    set_background('Data_mining_pr_logo_indigo.png')
     set_title_color("white")
     st.title("Machine Learning/ Linear Models")
     with st.expander("Section presentation"):
