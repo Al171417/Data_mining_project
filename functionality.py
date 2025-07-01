@@ -43,12 +43,12 @@ def welcome():
     set_background('Data_mining_pr_logo_rouge.png')
     set_title_color("white")
     st.title("Data Loading Support")
-    authors = """By:
-                 Alan Nonso(171417) 
-                 Antoine() 
-                 Irenée(168785)
-                 Sabarie(166792)"""
-    colored_text(authors, "white")
+    colored_text("By:", 'white') 
+    colored_text("Alan Nonso(171417)", 'white')
+    colored_text("Antoine()", 'white')
+    colored_text("Irenée(168785)", 'white')
+    colored_text("Sabarie(166792)", 'white')
+                 
     welcome_text = "Welcome to Data_File Traitor (DaFiT) !"
     line1 = "We are delighted to have you here.\n "
     line2 = "This application is designed to help you loading and analyzing data in a very deep eye."
