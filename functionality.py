@@ -40,7 +40,7 @@ def colored_text(text, color):
 
 
 def welcome():
-    set_background('Data_mining_pr_logo.png')
+    set_background('Data_mining_pr_logo_rouge.png')
     set_title_color("white")
     st.title("Data Loading Support")
     authors = "By:\n Alan Nonso(171417)\n Antoine()\n Irenée()\n Sabarie()"
