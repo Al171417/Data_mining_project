@@ -34,8 +34,16 @@ def set_title_color(color):
         unsafe_allow_html=True)
 
 
-def colored_text(text, color):
-    st.markdown(f"<span style='color: {color};'>{text}</span>",
+def styled_text(text, color=None, font_weight=None, font_style=None):
+    stylish = ""
+    if color is not None:
+        stylish += f' color: {color};'
+    if font_weight is not None:
+        stylish += f' font-weight: {font_weight};'
+    if font_style is not None:
+        stylish += f' font-style: {font_style};'
+
+    st.markdown(f"<span style='{stylish}'>{text}</span>",
                 unsafe_allow_html=True)
 
 
@@ -43,20 +51,20 @@ def welcome():
     set_background('Data_mining_pr_logo_rouge.png')
     set_title_color("white")
     st.title("Data Loading Support")
-    colored_text("By:", 'white') 
-    colored_text("Alan Nonso(171417)", 'white')
-    colored_text("Antoine()", 'white')
-    colored_text("Irenée(168785)", 'white')
-    colored_text("Sabarie(166792)", 'white')
+    styled_text("By:", 'white', "bold", "italic") 
+    styled_text("Alan Nonso(171417)", 'white', "bold", "italic")
+    styled_text("Antoine()", 'white', "bold", "italic")
+    styled_text("Irenée(168785)", 'white', "bold", "italic")
+    styled_text("Sabarie(166792)", 'white', "bold", "italic")
                  
     welcome_text = "Welcome to Data_File Traitor (DaFiT) !"
     line1 = "We are delighted to have you here.\n "
     line2 = "This application is designed to help you loading and analyzing data in a very deep eye."
     line3 = "Fell free to explore our content in the 'Navigation section'..."
-    colored_text(welcome_text, 'white')
-    colored_text(line1, 'white')
-    colored_text(line2, 'white')
-    colored_text(line3, 'white')
+    styled_text(welcome_text, 'white')
+    styled_text(line1, 'white')
+    styled_text(line2, 'white')
+    styled_text(line3, 'white')
 
 
 def data_obs_intro():
