@@ -63,10 +63,10 @@ def welcome():
     line1 = "We are delighted to have you here.\n "
     line2 = "This application is designed to help you loading and analyzing data in a very deep eye."
     line3 = "Fell free to explore our content in the 'Navigation section'..."
-    styled_text(welcome_text, 'white', font_size="24px")
-    styled_text(line1, 'black', font_size="24px")
-    styled_text(line2, 'black', font_size="24px")
-    styled_text(line3, 'black', font_size="24px")
+    styled_text(welcome_text, color='white', font_size="24px")
+    styled_text(line1, color='black', font_size="24px")
+    styled_text(line2, color='black', font_size="24px")
+    styled_text(line3, color='black', font_size="24px")
 
 
 def data_obs_intro():
