@@ -34,7 +34,7 @@ def set_title_color(color):
         unsafe_allow_html=True)
 
 
-def styled_text(text, color=None, font_weight=None, font_style=None):
+def styled_text(text, color=None, font_weight=None, font_style=None, font_size=None):
     stylish = ""
     if color is not None:
         stylish += f' color: {color};'
@@ -42,6 +42,8 @@ def styled_text(text, color=None, font_weight=None, font_style=None):
         stylish += f' font-weight: {font_weight};'
     if font_style is not None:
         stylish += f' font-style: {font_style};'
+    if font_size is not None:
+        stylish += f' font-size: {font_size};'
 
     st.markdown(f"<span style='{stylish}'>{text}</span>",
                 unsafe_allow_html=True)
@@ -57,14 +59,14 @@ def welcome():
     styled_text("Irenée(168785)", 'white', "bold", "italic")
     styled_text("Sabarie(166792)", 'white', "bold", "italic")
                  
-    welcome_text = "Welcome to Data_File Traitor (DaFiT) !"
+    welcome_text = "Welcome to our Data Mining project !"
     line1 = "We are delighted to have you here.\n "
     line2 = "This application is designed to help you loading and analyzing data in a very deep eye."
     line3 = "Fell free to explore our content in the 'Navigation section'..."
-    styled_text(welcome_text, 'white')
-    styled_text(line1, 'white')
-    styled_text(line2, 'white')
-    styled_text(line3, 'white')
+    styled_text(welcome_text, 'white', font_size="24px")
+    styled_text(line1, 'black', font_size="24px")
+    styled_text(line2, 'black', font_size="24px")
+    styled_text(line3, 'black', font_size="24px")
 
 
 def data_obs_intro():
