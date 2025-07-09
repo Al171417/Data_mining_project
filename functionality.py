@@ -55,7 +55,7 @@ def welcome():
     st.title("Data Loading Support")
     styled_text("By:", 'white', "bold", "italic") 
     styled_text("Alan Nonso(171417)", 'white', "bold", "italic")
-    styled_text("Antoine()", 'white', "bold", "italic")
+    styled_text("Antoine(169463)", 'white', "bold", "italic")
     styled_text("Irenée(168785)", 'white', "bold", "italic")
     styled_text("Sabarie(166792)", 'white', "bold", "italic")
                  
